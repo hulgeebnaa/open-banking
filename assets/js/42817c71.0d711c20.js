@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkopen_bank_doc=self.webpackChunkopen_bank_doc||[]).push([[4878],{1111:function(n){n.exports=JSON.parse('{"allTagsPath":"/open-banking/blog/tags","slug":"/open-banking/blog/tags/docusaurus","name":"docusaurus","count":4,"permalink":"/open-banking/blog/tags/docusaurus"}')}}]);

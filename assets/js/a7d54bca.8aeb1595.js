@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkopen_bank_doc=self.webpackChunkopen_bank_doc||[]).push([[4619],{1716:function(n){n.exports=JSON.parse('{"allTagsPath":"/open-banking/blog/tags","slug":"/open-banking/blog/tags/facebook","name":"facebook","count":1,"permalink":"/open-banking/blog/tags/facebook"}')}}]);
