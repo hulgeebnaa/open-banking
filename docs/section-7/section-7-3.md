@@ -4,32 +4,38 @@ sidebar_position: 3
 
 # Кредит карт хуулга харах
 
-Let's discover **Docusaurus in less than 5 minutes**.
+- **URI:** `card/credit/statement`
 
-## Getting Started
+- **X-Golomt-Service:** `CCSTATM`
 
-Get started by **creating a new site**.
+- **Хүсэлтийн тайлбар**
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+| Талбарын нэр                                 | Утга   |  Тайлбар | Заавал эсэх |
+|------------------------------------------|-----------|--------------|-----------|
+|registerNo	       | БЖ66060606	               | Мэдээллийг нь харах боломжтой банканд бүртгэлтэй харилцагчийн регистрийн дугаар|	Тийм|
+|cardToken	       | 123412341234	           | Картын дугаартай токен	                                                        |Тийм|
+|monthStart	|2021.9	|Хуулга харах сарын интервалын бага утга. 1-12 хүртэл тоо утга байна.<br/> **Формат:** yyyy.MM	|Тийм|
+|monthEnd	|2021.10|	Хуулга харах сарын интервалын их утга. 1-12 хүртэл тоо утга байна. <br/> **Формат:** yyyy.MM|	Үгүй|
 
-## Generate a new site
 
-Generate a new Docusaurus site using the **classic template**:
 
-```shell
-npx @docusaurus/init@latest init my-website classic
-```
 
-## Start your site
+- **Хариу тайлбар**
 
-Run the development server:
+`Сарын интервалтай жагсаалт байна. [ ] – жагсаалтаар байна`
 
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and display your changes.
+| Талбарын нэр                                 | Утга   |  Тайлбар | 
+|------------------------------------------|-----------|--------------|
+|cardNumber	       | String	|Маскласан картын дугаар|
+|cardName	       | String	|Картын нэр|
+|creditLimit	   | Number	|Картын лимит|
+|minPmnt	       | Number	|Тухайн сард төлсөн бага дүн|
+|openBal	       | Number	||
+|currBal	       | Number	||
+|month	           | Number	|Хуулга авсан дүн|
+|**statements**	       |        | `[ ] – тухайн сард хийгдсэн гүйлгээний жагсаалт байна`|
+|transactionDate	| Date	|Гүйлгээ хийгдсэн огноо.  <br/> **Формат:** Yyyy-mm-dd|
+|postDate	       | Date	|Гүйлгээ баталгаажсан огноо. <br/> **Формат:** Yyyy-mm-dd |
+|description	   | String	|Гүйлгээний утга|
+|billingAmount	   |Number	|Нэхэмжлэхийн дүн|
+|transactionAmount|	Number	|Гүйлгээний дүн|

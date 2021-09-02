@@ -4,32 +4,28 @@ sidebar_position: 1
 
 # Дансны дэлгэрэнгүй
 
-Let's discover **Docusaurus in less than 5 minutes**.
+- **URI:** `/account/inq`
 
-## Getting Started
+- **X-Golomt-Service:** `ACCTINQ`
 
-Get started by **creating a new site**.
+- **Хүсэлтийн тайлбар**
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+| Талбарын нэр                                 | Утга   |  Тайлбар | Заавал эсэх |
+|------------------------------------------|-----------|--------------|-----------|
+| accountId                                   | 1100100101      | Дансны дугаар явуулна | Тийм |
 
-## Generate a new site
 
-Generate a new Docusaurus site using the **classic template**:
+- **Хариу тайлбар**
 
-```shell
-npx @docusaurus/init@latest init my-website classic
-```
-
-## Start your site
-
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and display your changes.
+| Талбарын нэр                                 | Утга   |  Тайлбар | 
+|------------------------------------------|-----------|--------------|
+| accountId	                                |        | 	Тухайн дансны дугаар      | 
+| accountName		                    |     Бат   | Данс эзэмшигчийн нэр | 
+| currency                                  |   MNT     | Дансны валют| 
+| **balanceLL**	                           |  |  Дансны үлдэгдлийн жагсаалт – [ ] – Array Object    | 
+| type                                   |    AVAIL    | Үлдэгдлийн төрөл. AVAIL - Боломжит үлдэгдэл. | 
+| amount	                      |  {}  – Object    | 	Дансны үлдэгдэл дүн | 
+| value                                  |  15200     | Тоон утга |
+| currency                                 |   MNT	     | Валют |
+				  		
+	

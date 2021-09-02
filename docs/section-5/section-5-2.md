@@ -4,32 +4,26 @@ sidebar_position: 2
 
 # Хадгаламжийн данс нээлгэх
 
-Let's discover **Docusaurus in less than 5 minutes**.
+- **URI:** `/account/add/deposit`
 
-## Getting Started
+- **X-Golomt-Service:** `DEPACCTADD`
 
-Get started by **creating a new site**.
+- **Хүсэлтийн тайлбар**
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+| Талбарын нэр                                 | Утга   |  Тайлбар | Заавал эсэх |
+|------------------------------------------|-----------|--------------|-----------|
+| registerNo                                   | AAxxxx      | Харилцагчийн регисртийн дугаар | Тийм |
+| currency                                   | MNT      | Данс нээх валют | Тийм |
+| accountName                                   | Овог Нэргүй      | Дансны нэр | Тийм |
+| accountShortName                                   | Товч нэр      | Дансны товч нэр | Тийм |
+| schemeCode                                   | TU120      | Банкнаас урдьчилан гэрээний үндсэнд гаргаж өгсөн бүтээгдэхүүний код| Тийм |
+| depositTermMonth                                  | 12      | Тус бүтээгдэхүүнийг нээх боломжтой сар байнаа | Тийм |
+| initDepositAmount                                   | 100000      | Данс нээх мөнгөн дүн буюу Бүтээгдэхүүний доод дүнгээс багагүй байна | Тийм |
+| initBalanceAccount                                 | 1200XXXX      | Хадгаламжийн анхны орлого татах харилцагчийн харилцах дансны дугаар| Тийм |
+| initDepositCurrency                                 | MNT      | Харилцагчийн харилцах дансны дугаарын валют | Тийм |					
 
-## Generate a new site
+- **Хариу тайлбар**
 
-Generate a new Docusaurus site using the **classic template**:
-
-```shell
-npx @docusaurus/init@latest init my-website classic
-```
-
-## Start your site
-
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and display your changes.
+| Талбарын нэр                                 | Утга   |  Тайлбар | 
+|------------------------------------------|-----------|--------------|
+| account                                |     String   | 	Шинээр нээсэн дансны дугаар      | 

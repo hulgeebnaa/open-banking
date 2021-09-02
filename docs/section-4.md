@@ -26,7 +26,7 @@ sidebar_position: 4
 | expiresIn                                   |   300     | Секунд хэмжигдэхүүн |
 
 
-
+***
 
 - **URI:** `/auth/refresh`
 - **X-Golomt-Service:** `LGIN`

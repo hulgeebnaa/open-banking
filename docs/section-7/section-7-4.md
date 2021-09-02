@@ -4,32 +4,47 @@ sidebar_position: 4
 
 # Дебит карт захиалах
 
-Let's discover **Docusaurus in less than 5 minutes**.
+- **URI:** `/card/debit/order`
 
-## Getting Started
+- **X-Golomt-Service:** `DBCRDORD`
 
-Get started by **creating a new site**.
+- **Хүсэлтийн тайлбар**
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+| Талбарын нэр                                 | Утга   |  Тайлбар | Заавал эсэх |
+|------------------------------------------|-----------|--------------|-----------|
+|custRegFlg	   | Y	              |  Харилцагч Голомт банканы харилцагч болохыг зөвшөөрсөн эсэх. <br/>`Y – тийм` `N – үгүй` 	                                                        |Тийм|
+|acctRegFlg	   | Y	              |  Харилцагч Голомт банканд данс нээлгэхийг зөвшөөрсөн эсэх.  <br/>`Y – тийм` `N – үгүй`	                                                        |Тийм|
+|contFlg	       | Y	              |  Харилцагч үйлчилгээний нөхцлийг зөвшөөрсөн эсэх. <br/>`Y – тийм` `N – үгүй`	                                                                    |Тийм|
+|branchId	   | 110	              |  Харилцагч үйлчилгээгээ авах салбарын дугаар.	                                                                                        |Тийм|
+|regNo	       | БЖ60010117	      |  Харилцагчийн регистрийн дугаар	                                                                                                        |Тийм|
+|firstName	   | Test	          |  Өөрийн нэр	                                                                                                                            |Тийм|
+|lastName	   | Test	          |  Эцэг-эхийн нэр	                                                                                                                        |Тийм|
+|birthdate	   | 1960-01-01	      |  Төрсөн огноо	                                                                                                                        |Тийм|
+|accountNumber	|                  |  Дансны дугаар	                                                                                                                        |Үгүй|
+|feeAmount	   | 9900            |	Шимтгэлийн дүн	                                                                                                                        |Үгүй|
+|**postRequest**	   |**Object**          |	**Карт хүргэлтийн үйлчилгээний мэдээлэл**s||
+|isByPost	   | N	              |  Хүргэлтээр авах эсэх.<br/> `Y – тийм` `N – үгүй`	                                                                                            |Тийм|
+|isByPostalFee	|N	              |  Хүргэлтийн төлбөр төлсөн эсэх	                                                                                                        |Тийм|
+|postalFee	   | 0	              |  Хүргэлтийн шимтгэл	                                                                                                                    |Тийм|
+|**address**	       | **Array**	          |  **Харилцагчийн оршин суугаа хаягийн мэдээлэл**||
+|country	       | УБ	              |  Аймаг, нийслэл	                                                                                                                        |Тийм|
+|city	       | УБ01	          |  Сум дүүргийн мэдээлэл	                                                                                                                |Тийм|
+|building	   | Viva City		  |                                                                                                                                          |Тийм|
+|apartment	   | 303		          |                                                                                                                                          |Тийм|
+|addressLine1	|5-р хороо		  |                                                                                                                                          |Тийм|
+|addressLine2	|1 хороолол		  |                                                                                                                                          |Үгүй|
+|addressLine3	|гудамж		      |                                                                                                                                          |Үгүй|
+|**phoneEmail**	   | **Array**	          |  **Харилцагчийн холбоо барих мэдээлэл**||
+|type	       | EMAIL	          |  Дараах 2 утга байна. Үүнд: <br/>PHONE – утасны дугаар<br/> EMAIL – и-мэйл хаяг	                                                                |Тийм|
+|subType	       |                   |  Хэрвээ `<type>` талбарын утга `EMAIL` бол энэхүү талбар дээр `HOMEEML` <br/>Харин `<type>` талбарын утга `PHONE` бол энэхүү талбарын утга `CELLPH` байна|Тийм|
+|email	       | test@gmail.com	  |  Харилцагчийн и-мэйл хаяг байна. Хэрвээ `<type>` талбарын утга `EMAIL` бол энэхүү талбар заавал байна 	                                       | Үгүй|
+|phone	       | 98662211	      |  Утасны дугаар оруулна. Хэрвээ `<type>` талбарын утга `PHONE` бол энэхүү талбар заавал байна	                                               | Үгүй|
+|countryCode	   | 976	              |  Улсын код |	Тийм |
 
-## Generate a new site
 
-Generate a new Docusaurus site using the **classic template**:
+- **Хариу тайлбар**
 
-```shell
-npx @docusaurus/init@latest init my-website classic
-```
-
-## Start your site
-
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and display your changes.
+| Талбарын нэр                                 | Утга   |  Тайлбар | 
+|------------------------------------------|-----------|--------------|
+|resultMsg|	String	|Дебит карт захиалах хүсэлт амжилттай болсон талаар мэдээлэл байна. Мессеж нь дараах форматтай байх ба **SR081020201496030** лавлах дугаар юм.<br/> `Debit Card Issue Request Submitted Successfully with request number: SR081020201496030` |
+|status|	String	|Амжилттай бол **SUCCESS** утгатай байна |

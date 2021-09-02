@@ -4,32 +4,32 @@ sidebar_position: 3
 
 # Дансны жагсаалт авах
 
-Let's discover **Docusaurus in less than 5 minutes**.
+- **URI:** `/account/list`
 
-## Getting Started
+- **X-Golomt-Service:** `ACCTLST`
 
-Get started by **creating a new site**.
+- **Хүсэлтийн тайлбар**
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+| Талбарын нэр                                 | Утга   |  Тайлбар | Заавал эсэх |
+|------------------------------------------|-----------|--------------|-----------|
+| registerNo                                  | AAxxxx      | Харилцагчийн регисртийн дугаар | Тийм |
 
-## Generate a new site
 
-Generate a new Docusaurus site using the **classic template**:
+- **Хариу тайлбар**
 
-```shell
-npx @docusaurus/init@latest init my-website classic
-```
+`Хариу мэдэгдэл нь [ ] – жагсаалт байна.`
 
-## Start your site
+| Талбарын нэр                                 | Утга   |  Тайлбар | 
+|------------------------------------------|-----------|--------------|
+| accountId	                                |    110xxxxxxx    | 	дансны дугаар      | 
+| accountName		                    |     Бат   | Данс эзэмшигчийн нэр | 
+| currency                                  |   MNT     | Дансны валют| 
+| schemeType                           | SBA |  Дансны төрөл<br/>  SBA – харилцах данс<br/>TUA – орлого авдаг хадгаламжийн данс<br/>  TDA – орлого авдаггүй хадгаламжийн данс | 
+| branchId                                |   110	     | Салбарын дугаар   |
+				  		
 
-Run the development server:
 
-```shell
-cd my-website
 
-npx docusaurus start
-```
+		
 
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and display your changes.
+		                        

@@ -4,32 +4,36 @@ sidebar_position: 1
 
 # Харилцагчийн мэдээлэл харах
 
-Let's discover **Docusaurus in less than 5 minutes**.
+- **URI:** `/customer/inquire`
 
-## Getting Started
+- **X-Golomt-Service:** `RETCUSTINQ`
 
-Get started by **creating a new site**.
+- **Хүсэлтийн тайлбар**
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+| Талбарын нэр                                 | Утга   |  Тайлбар | Заавал эсэх |
+|------------------------------------------|-----------|--------------|-----------|
+| registerNo                                  | БЖ66060606      | Мэдээлэлийг нь харах боломжтой банканд бүртгэлтэй харилцагчийн регистрийн дугаар| Тийм |
+		
 
-## Generate a new site
 
-Generate a new Docusaurus site using the **classic template**:
+- **Хариу тайлбар**
 
-```shell
-npx @docusaurus/init@latest init my-website classic
-```
 
-## Start your site
-
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and display your changes.
+| Талбарын нэр                                 | Утга   |  Тайлбар | 
+|------------------------------------------|-----------|--------------|
+|customer	|Object                     	    |Үндсэн мэдээлэл |
+|registerNo	|String	                            |Харилцагчийн регистрийн дугаар|
+|firstName	|String	                            |Өөрийн нэр|
+|lastName	|String	                            |Эцэг- эхийн нэр|
+|name	                   |      String	    |Бүтэн нэр|
+|familyName	               |     String	        |Овог|
+|salutation	               |     String	        |Хүйс|
+|birthDate	               |  Date (yyyy-MM-dd)	|Төрсөн огноо|
+|branchId	               | String         	|Үндсэн салбарын дугаар|
+|isInternetBankingEnabled	|Boolean	        |Интернэт банк ашигладаг эсэх|
+|phoneEmails	           |     Object	        | Холбоо барих мэдээлэл|
+|type	                   | String	            |`PHONE` - Утасны дугаар уу <br/>`EMAIL` -  и-мэйл хаяг|
+|subType	               | String	            |Утас, И-мэйл хаягийн төрөл. <br/>Жишээ нь: <br/>  `CELLPH` – гар утас <br/>  `HOMEEML` – үндсэн и-мэйл хаяг г.м|
+|countryCode	           | String	            |    Улсын код|
+|emailId	               | String	            | `<type>` талбарын утга EMAIL үед энэхүү талбар дээр бүртгэлтэй и-мэйл хаяг байна|
+|phoneNo	               | String	            | `<type>` талбарын утга PHONE үед энэхүү талбар дээр утасны дугаар байна|

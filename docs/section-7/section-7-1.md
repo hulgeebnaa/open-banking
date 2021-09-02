@@ -4,32 +4,32 @@ sidebar_position: 1
 
 # Кредит карт захиалах
 
-Let's discover **Docusaurus in less than 5 minutes**.
+- **URI:** `/api/card/credit/order`
 
-## Getting Started
+- **X-Golomt-Service:** `CRECRDORD`
 
-Get started by **creating a new site**.
+- **Хүсэлтийн тайлбар**
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+| Талбарын нэр                                 | Утга   |  Тайлбар | Заавал эсэх |
+|------------------------------------------|-----------|--------------|-----------|
+|registerNo	       | БЖ66060606	    |Мэдээлэлийг нь харах боломжтой банканд бүртгэлтэй харилцагчийн регистрийн дугаар	                                                        |Тийм           |
+|prodCode	       | 9003	        |Тухайн байгууллагад урьдчилаад өгсөн Бүтээгдэхүүний код	                                                                                |    Тийм|
+|amount	           | 100000	        |Хүсэж буй картын эрх	                                                                                                                    |Тийм|
+|firstName	       | Test	        |Өөрийн нэр	                                                                                                                                |Тийм|
+|lastName	       | Test	        |Эцэг-эхийн нэр	                                                                                                                            |Тийм|
+|birthdate	       | 1960-01-01	    |Төрсөн огноо	                                                                                                                            |Тийм|
+|**phoneEmail**	   |     Array	    |Харилцагчийн холбоо барих мэдээлэл||
+|type	           | EMAIL	        |Дараах 2 утга байна. Үүнд: <br/>PHONE – утасны дугаар <br/>EMAIL – и-мэйл хаяг	                                                                    |Тийм|
+|subType	       |     HOMEEML	|Хэрвээ `<type>` талбарын утга `EMAIL` бол энэхүү талбар дээр `HOMEEML` <br/>Харин `<type>` талбарын утга `PHONE` бол энэхүү талбарын утга `CELLPH` байна|	Тийм|
+|email	           | test@gmail.com	|Харилцагчийн и-мэйл хаяг байна. Хэрвээ `<type>` талбарын утга EMAIL бол энэхүү талбар заавал байна 	                                    |    Үгүй|
+|phone	           | 98662211	    |Утасны дугаар оруулна. Хэрвээ `<type>` талбарын утга PHONE бол энэхүү талбар заавал байна	                                                |Үгүй|
+|countryCode	   |     976	    |        Улсын код	                                                                                                                        |        Тийм|
 
-## Generate a new site
 
-Generate a new Docusaurus site using the **classic template**:
 
-```shell
-npx @docusaurus/init@latest init my-website classic
-```
 
-## Start your site
+- **Хариу тайлбар**
 
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and display your changes.
+| Талбарын нэр                                 | Утга   |  Тайлбар | 
+|------------------------------------------|-----------|--------------|
+|cardToken|	String	|Картын токен         |

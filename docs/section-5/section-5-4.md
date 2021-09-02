@@ -4,32 +4,37 @@ sidebar_position: 4
 
 # Дансны хуулга харах
 
-Let's discover **Docusaurus in less than 5 minutes**.
+- **URI:** `/account/statement`
 
-## Getting Started
+- **X-Golomt-Service:** `ACCTSTA`
 
-Get started by **creating a new site**.
+- **Хүсэлтийн тайлбар**
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+| Талбарын нэр                                 | Утга   |  Тайлбар | Заавал эсэх |
+|------------------------------------------|-----------|--------------|-----------|
+| accountId                                  | 1100100101      | Дансны дугаар явуулна | Тийм |
+| startDate                                 | 2020-10-10    |Эхлэх огноо байна.<br/> ISO Date форматтай байна | Тийм |
+| endDate                                 | 	2020-10-20      |Дуусах огноо.<br/> ISO Date форматтай байна| Тийм |
 
-## Generate a new site
 
-Generate a new Docusaurus site using the **classic template**:
+- **Хариу тайлбар**
 
-```shell
-npx @docusaurus/init@latest init my-website classic
-```
 
-## Start your site
-
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and display your changes.
+| Талбарын нэр                                 | Утга   |  Тайлбар | 
+|------------------------------------------|-----------|--------------|
+| accountId	                                |        | 	Тухайн дансны дугаар      | 
+| statements		                    |      | Дансны хуулганы жагсаалт – [ ] – Array Object | 
+| recNum                                 |   1     | Дарааллын дугаар| 
+| tranId                          | S99088 |  Гүйлгээний дугаар | 
+| drOrCr                               |   Debit	     | Debit – Зарлага <br/> Credit – Орлого   |
+| tranId                          | S99088 |  Гүйлгээний дугаар | 
+| tranAmount                          |300  |  Гүйлгээний дүн | 
+| tranDesc                          | Test guilgee |  Гүйлгээний утга | 
+| tranPostedDate                          | 2020-10-20T15:01:21 |  Гүйлгээ амжилттай болсон огноо | 
+| tranCrnCode                          | MNT|  Гүйлгээний валют| 
+| exchRate                         | 1|  Гүйлгээний ханш| 
+		
+		
+		
+		
+		

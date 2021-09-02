@@ -4,32 +4,43 @@ sidebar_position: 3
 
 # Байгууллага - Харилцагч бүртгэх
 
-Let's discover **Docusaurus in less than 5 minutes**.
+- **URI:** `/customer/corporate/add`
 
-## Getting Started
+- **X-Golomt-Service:** `CORPCUSTADD`
 
-Get started by **creating a new site**.
+- **Хүсэлтийн тайлбар**
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+| Талбарын нэр                                 | Утга   |  Тайлбар | Заавал эсэх |
+|------------------------------------------|-----------|--------------|-----------|
+|corporateName	          |  Голомт Банк	             |       Зөвхөн үсэг оруулах боломжтой	                                                  |      Тийм       |
+|registerNumber	          |  1122334	                 |       Байгууллагын регистрийн дугаар                      	                          |      Үгүй|
+|addressLine1	          |  СБ дүүрэг	                 |   Байгууллагын хаягийн мэдээлэл байна.	                                              |  Тийм|
+|country	              |      MN	                     |       Улс орны мэдээлэл	                                                              |      Тийм|
+|state	                  |  УБ	                         |   Хот эсвэл аймаг оруулна	                                                          |      Тийм|
+|city	                  |  УБ01	                     |   Сум дүүргийн мэдээлэл	                                                              |  Тийм|
+|createBankAccount	      |  Y	                         |   Байгууллага дээр данс үүсгэх эсэхайгууллага дээр данс үүсгэх эсэх <br/>Y – тийм <br/>N – үгүй  |	Тийм|
+|**phoneEmails**	          |                              |        `[ { } ] – форматтай массив утга байна`||
+|type	                  |  EMAIL or PHONE	             |   Утасны дугаар эсвэл и-мэйл хаяг байна.	                                              |  Тийм|
+|phone	                  |  98662211	                 |   type == PHONE үед заавал байна	||
+|email	                  |  test@golomtbank.com         |    type == EMAIL үед заавал байна	||
+|countryLocalCode	      |  976	                     |       Улсын код явуулна.	                                                              |      Тийм|
+|**retail**	                  |  `{} – форматтай объект утга`	 |   Эзэмшигчийн мэдээлэл	                                                              |  Тийм|
+|registerNumber	          |  БА98010101                  |	Иргэний регистрийн дугаар	                                                          |  Тийм|
+|familyName              |	Боржигон	                 |   Ургийн овог	                                                                      |      Тийм|
+|lastName	              |  Дорж	                     |   Эцэг эхийн нэр	                                                                      |  Тийм|
+|firstName	              |  БАТ	                     |       Эзэмшигчийн нэр	                                                              |          Тийм|
+|salutation	              |  MR. MS.	                 |       Хүйс	                                                                          |      Тийм|
+|birthDate	              |  1998-01-02	                 |   Төрсөн огноо	                                                                      |  Тийм|
+|**phoneEmails**	          |                              |        `[ { } ] – форматтай массив утга байна`||
+|type	                  |  EMAIL or PHONE	             |   Утасны дугаар эсвэл и-мэйл хаяг байна.	                                              |  Тийм|
+|phone	                  |  98662211	                 |   type == PHONE үед заавал байна	||
+|email	                  |  test@golomtbank.com         |    type == EMAIL үед заавал байна	||
+|countryLocalCode	      |  976	                     |       Улсын код явуулна.	                                                              |      Тийм|
 
-## Generate a new site
 
-Generate a new Docusaurus site using the **classic template**:
+- **Хариу тайлбар**
 
-```shell
-npx @docusaurus/init@latest init my-website classic
-```
-
-## Start your site
-
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and display your changes.
+| Талбарын нэр                                 | Утга   |  Тайлбар | 
+|------------------------------------------|-----------|--------------|
+|referenceId|	String	|Лавлах дугаар          |
+|accountId	|String	    |Харилцах дансны дугаар|

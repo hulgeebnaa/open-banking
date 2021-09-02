@@ -4,32 +4,21 @@ sidebar_position: 2
 
 # Сум, дүүргийн жагсаалт авах
 
-Let's discover **Docusaurus in less than 5 minutes**.
+- **URI:** `/utility/city/inq`
 
-## Getting Started
+- **X-Golomt-Service:** `CITYINQ`
 
-Get started by **creating a new site**.
+- **Хүсэлтийн тайлбар**
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+| Талбарын нэр                                 | Утга   |  Тайлбар | Заавал эсэх |
+|------------------------------------------|-----------|--------------|-----------|
+|cityCode	|ALL	|Сум дүүргийн код	|Тийм|
 
-## Generate a new site
 
-Generate a new Docusaurus site using the **classic template**:
 
-```shell
-npx @docusaurus/init@latest init my-website classic
-```
+- **Хариу тайлбар**
 
-## Start your site
-
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and display your changes.
+| Талбарын нэр                                 | Утга   |  Тайлбар | 
+|------------------------------------------|-----------|--------------|
+|cityCode|	String|	Сум дүүргийн код|
+|cityName|	String|	Сум дүүргийн нэр|
