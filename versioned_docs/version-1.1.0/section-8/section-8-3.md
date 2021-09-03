@@ -8,7 +8,7 @@ sidebar_position: 3
 
 - **X-Golomt-Service:** `SOLINQ`
 
-- **Хүсэлтийн төрөл:** `GET`
+- **Хүсэлтийн төрөл:** `POST`
 
 - **Хүсэлтийн тайлбар**
 

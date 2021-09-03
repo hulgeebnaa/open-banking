@@ -8,7 +8,7 @@ sidebar_position: 1
 
 - **X-Golomt-Service:** `RETCUSTINQ`
 
-- **Хүсэлтийн төрөл:** `GET`
+- **Хүсэлтийн төрөл:** `POST`
 
 - **Хүсэлтийн тайлбар**
 

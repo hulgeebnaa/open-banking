@@ -9,7 +9,7 @@ sidebar_position: 4
 
 - **X-Golomt-Service:** `LGIN`
 
-- **Хүсэлтийн төрөл:** `GET`  
+- **Хүсэлтийн төрөл:** `POST`  
 
 - **Хүсэлтийн тайлбар**
 
