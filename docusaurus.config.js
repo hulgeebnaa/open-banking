@@ -5,13 +5,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'Open Banking Interface',
   tagline: 'Documentation',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: 'https://hulgeebnaa.github.io',
+  baseUrl: '/open-banking/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicongolomt.png',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'hulgeebnaa', // Usually your GitHub org/user name.
+  projectName: 'open-banking', // Usually your repo name.
+  trailingSlash: false,
   themeConfig: {
 
     navbar: {
@@ -27,9 +28,13 @@ module.exports = {
           position: 'left',
           label: 'Documentation',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          type: 'docsVersionDropdown',
+          position: 'right',
+        },
+        // {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          href: 'https://github.com/hulgeebnaa/open-banking',
           label: 'GitHub',
           position: 'right',
         },
@@ -52,15 +57,15 @@ module.exports = {
           items: [
             {
               label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              href: '#',
             },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: '#',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: '#',
             },
           ],
         },
@@ -73,12 +78,12 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/hulgeebnaa/open-banking',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Golomt`,
+      copyright: `Copyright © ${new Date().getFullYear()} Golomt Bank`,
     },
     prism: {
       theme: lightCodeTheme,
@@ -93,13 +98,13 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
+          editUrl: 'https://github.com/hulgeebnaa/open-banking',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/main/website/blog/',
+            'https://github.com/hulgeebnaa/open-banking',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
