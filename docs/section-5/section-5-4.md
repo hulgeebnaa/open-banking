@@ -8,7 +8,7 @@ sidebar_position: 4
 
 - **X-Golomt-Service:** `ACCTSTA`
 
-- **Хүсэлтийн төрөл:** `GET`
+- **Хүсэлтийн төрөл:** `POST`
 
 - **Хүсэлтийн тайлбар**
 

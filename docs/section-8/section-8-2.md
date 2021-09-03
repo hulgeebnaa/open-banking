@@ -8,7 +8,7 @@ sidebar_position: 2
 
 - **X-Golomt-Service:** `CITYINQ`
 
-- **Хүсэлтийн төрөл:** `GET`
+- **Хүсэлтийн төрөл:** `POST`
 
 - **Хүсэлтийн тайлбар**
 
