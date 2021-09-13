@@ -1,0 +1,60 @@
+.container_home {
+  animation-name: fade_in;
+  animation-duration: 3s;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+}
+.left_side {
+  margin-left: 30px;
+  text-align: left;
+}
+#ehleh_button {
+  margin-right: 20px !important;
+}
+@keyframes fade_in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.container_home#main {
+  grid-template-columns: 1fr 1fr;
+}
+.left_main .text_container {
+  border-radius: 5px;
+  background-color: var(--ifm-hero-background-color);
+  color: var(--ifm-hero-text-color);
+  margin: 25px;
+  margin-top: 15%;
+  padding: 10px;
+  box-shadow: 2px 2px 15px 7px rgba(0, 0, 0, 0.44);
+}
+.right_main {
+  margin: auto;
+  z-index: 0;
+  width: 80%;
+}
+.right_main pre {
+  font-size: 12px;
+  height: 400px;
+}
+
+@media (max-width: 1000px) {
+  .right_side {
+    visibility: hidden;
+  }
+  .container_home {
+    grid-template-columns: 1fr;
+  }
+  .left_side {
+    text-align: center;
+    margin: auto;
+  }
+  .container_home#main {
+    grid-template-columns: 1fr;
+  }
+}
