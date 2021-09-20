@@ -9,6 +9,7 @@ import Lottie from "react-lottie";
 import * as Welcome_animation from "../animations/67485-welcome-plants.json";
 import "../pages/style.css";
 import Jave_ex from "../docs/java_code.md";
+import Api_ex from "../docs/api_code.md";
 
 function HomepageHeader() {
   const defaultOptions = {
@@ -57,7 +58,7 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <div id="main" className="container_home">
-          <div className="left_main">
+          <div id="left_main_code" className="left_main">
             <div className="text_container">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
               auctor tellus ut nibh pharetra, eget pretium libero tristique.
@@ -72,11 +73,20 @@ export default function Home() {
               tempor nibh. Nam eleifend facilisis ligula. Praesent vitae odio eu
             </div>
           </div>
-          <div className="right_main">
+          <div id="right_main_code" className="right_main">
             <Jave_ex></Jave_ex>
           </div>
         </div>
-        <div id="main" className="container_home"></div>
+        <div id="main" className="container_home">
+          <div id="left_main_api" className="left_main">
+            <div id="left_text_container_api" className="text_container">
+              API THAT WE USE IN THIS PROJECT
+            </div>
+          </div>
+          <div id="right_main_api" className="right_main">
+            <Api_ex></Api_ex>
+          </div>
+        </div>
       </main>
     </Layout>
   );
