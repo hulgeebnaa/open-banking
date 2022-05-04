@@ -1,0 +1,50 @@
+Open Stack –ын node 1 болон node 2 бэлэн болсон тул мэдээллийг явуулж байна. Одоогийн байдлаар 4 сервер бүгд 1 rack –нд суурьлуулсан бөгөөд, Node1,2 нь 10g interface –тэй бөгөөд 10g холболтуудыг хийсэн байгаа. iLo port –ууд дээр port configuration –уудыг хийж өгнө үү, дараа нь OS installation хийсний дараа Data port –ууд дээр шаардлагатай port configuration –уудыг хийлгэх байх.
+
+open-stack-node-2
+Product Name:                  ProLiant DL380 Gen9
+Serial Number:                  SGH529YNXT
+Location:                            DC2 – Rack-b8 – Unit-14-15
+iLo address:                        10.10.11.56
+network interface:          net1 – A талын 10g switch – member 2(дунд) – port-46
+net2 – B талын 10g switch – member 2(дунд) – port-46
+iLo – A талын stack switch – member 3(доод) – port-43 
+
+open-stack-node-1
+Product Name:                  ProLiant DL380 Gen9
+Serial Number:                  SGN529YNXY
+Location:                            DC2 – Rack-b8 – Unit-10-11
+iLo address:                        10.10.11.54
+network interface:          net1 – A талын 10g switch – member 2(дунд) – port-45
+net2 – B талын 10g switch – member 2(дунд) – port-45
+iLo – A талын stack switch – member 3(доод) – port-45 
+
+
+
+open-stack-node-3
+Product Name:                  ProLiant DL380 Gen9
+Serial Number:                  SGH529YNXW
+Location:                              DC2 – Rack-b8 – Unit-26-27
+iLo address:                        10.10.6.33
+network interface:           net1 – A талын stack switch – member 3(доод) – port-39
+net2 – A талын stack switch – member 2(дунд) – port-31
+Нэмэлт:                               iLO Health нь Degraded status –тай байгаа бөгөөд support –руу case үүсгэж асуудлыг тодруулах шаардлагатай байгаа.
+open-stack-node-4
+Product Name:                  ProLiant DL380 Gen9
+Serial Number:                  SGH529YNXV
+Location:                              DC2 – Rack-b8 – Unit-22-23
+iLo address:                        10.10.6.34
+network interface:           net1 – A талын stack switch – member 3(доод) – port-41
+net2 – A талын stack switch – member 2(дунд) – port-34
+Нэмэлт:                               Тухайн серверийн 1 power supply нь шатсан байгаа бөгөөд support case үүсгэн солиулах шаардлагатай байгаа.
+Хийгдсэн ажлууд:
+-	dc1 –ээс dc2 –луу зөөх
+-	Rack –нд суурьлууах
+-	Холболтууд хийх
+-	iLO reset хийж тохиргоог шинээр хийх
+-	Cable -үүдийг label –жүүлэх
+-	Firmware шинэчлэх
+OS installation болон тохиргоо хийж байх хооронд хийгдэх ажлууд:
+-	HPE –рүү support case үүсгэж гэмтэлтэй power supply болон iLO –г оношлуулах
+-	Fiber channel холболт хийх
+-	Netbox болон prtg дээрхи бүртгэлийг шинэчлэх
+-	хуучин custodian –ны zoning болон san02 –оос авсан virtual volume –уудыг demote хийж SAN сүлжээний alias –ыг шинэчлэх, шаардлагатай zoning хийх
